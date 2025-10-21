@@ -34,6 +34,8 @@ java Main
 
 ## ✍️ My Answers
 
+### Aware Model
+
 This model would be appropriete for public universities with a high community outreach. The student isn't just weighed in academic performance but also external factors. 
 
 Ethnicity
@@ -61,8 +63,30 @@ If the college wants to have the most commuinity outreach giving locals the oppo
 GPA
 If the student has a 2.0 or higher that would be enough for this college, there may have been external factors that contributed to this grade that the student couldn't control
 
-Blind model
+### Blind Model
 
-No changes were as this model will be most appropriate for colleges of a higher prestige and for students who are more acdemically inclind. 
+No changes were as this model will be most appropriate for colleges of a higher prestige and for students who are more acdemically inclined. 
+
+### Discussion & Reflection
+
+● What variables did you include, and why?
+
+
+● Did you exclude any sensitive features? Why or why not?
+
+
+● Should “legacy” still carry a positive weight?
+
+
+● What other features (e.g., proximity, essay strength, disability) might you add or adjust?
+
+
+#### Feature Selection & Design
+
+#### Fairness & Outcomes
+
+#### Transparency & Accountability
+
+#### Broader Implications
 
 ---

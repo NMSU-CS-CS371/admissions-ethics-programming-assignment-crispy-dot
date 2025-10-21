@@ -18,11 +18,16 @@ public class Admissions {
     public static double awareScore(Applicant app) {
         double score = blindScore(app);
 
-        if (app.income < 40000) score += 0.05;     // low-income boost
-        if (app.firstGen) score += 0.05;           // first-generation bonus
-        if (app.disability) score += 0.03;         // accessibility consideration
-        if (app.legacy) score += 0.02;             // legacy advantage
-        if (app.local) score += 0.03;              // local preference
+        if (app.income < 40000) score += 0.1;     // low-income boost
+        if (app.firstGen) score += 0.1;           // first-generation bonus
+        if (app.disability) score += 0.1;         // accessibility consideration 
+        if (app.local) score += 0.1;              // local preference
+        if (app.gpa > 2.0) score += 0.2;          // gpa
+        if (app.extra >= 0.7) score += 0.5;       // extracurriculars
+        if (app.essay >= 0.7) score += 0.5;       // essay quality
+        if (app.rec >= 0.7) score += 0.5;         // recommendation strength
+        if (app.test < 950) score -= 0.1;         // low test score penalty
+
         return Math.min(score, 1.0);               // cap score at 1.0
     }
 }

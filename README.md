@@ -29,7 +29,7 @@ or locally via terminal:
 ```bash
 javac Applicant.java Admissions.java Main.java
 java Main
-
+```
 ---
 
 ## ✍️ My Answers
@@ -61,7 +61,7 @@ If the college wants to have the most commuinity outreach giving locals the oppo
 GPA
 If the student has a 2.0 or higher that would be enough for this college, there may have been external factors that contributed to this grade that the student couldn't control
 
-# Blind model
+Blind model
 
 No changes were as this model will be most appropriate for colleges of a higher prestige and for students who are more acdemically inclind. 
 

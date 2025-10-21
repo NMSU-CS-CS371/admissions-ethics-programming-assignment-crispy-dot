@@ -32,7 +32,7 @@ java Main
 
 ---
 
-## Awareness model
+## ✍️ My Answers
 
 This model would be appropriete for public universities with a high community outreach. The student isn't just weighed in academic performance but also external factors. 
 

@@ -69,6 +69,7 @@ No changes were made as this model will be most appropriate for colleges of a hi
 
 ### Discussion & Reflection
 
+#### Feature Selection & Design
 ● What variables did you include, and why?
 Explained Above
 
@@ -82,35 +83,53 @@ Explained Above
 ● What other features (e.g., proximity, essay strength, disability) might you add or adjust?
   I wouldn't know how to quantify this but maybe a persons mental health to explain their academic challenges they have faced. Of corse the student would disclosed this information voluntarily.   
 
-#### Feature Selection & Design
-
-● Between the blind and aware models, which applicants benefited or lost out?
-
-| Factor                     | Weight | Description |
-|----------------------------|--------|--------------|
-| GPA                        | +0.2   | Reward for GPA above 2.0 |
-| Extracurricular Activities | +0.5   | Strong participation (≥ 0.7) |
-| Essay Quality              | +0.5   | High-quality essay (≥ 0.7) |
-| Recommendation Strength    | +0.5   | Strong recommendation (≥ 0.7) |
-| Income                     | +0.1   | Boost for low-income applicants (< $40,000) |
-| First-generation Status    | +0.1   | Bonus for first-generation students |
-| Disability Status          | +0.1   | Consideration for accessibility |
-| Local Residency            | +0.1   | Preference for local applicants |
-| Test Score (Low)           | −0.1   | Penalty for test scores below 950 |
-
-✅ **Interpretation:**
-- The **highest-weighted factors** are *extracurriculars*, *essays*, and *recommendations* (each +0.5), showing the model heavily values holistic qualities.  
-- Academic performance (GPA +0.2) and context-based fairness factors (income, first-gen, disability, local) provide smaller boosts (+0.1 each).  
-- A low test score slightly hurts the applicant (−0.1). 
-● Which applicants specifically benefited from the aware model?
-● Does adding income or first-generation status make the system fairer or less fair? Why?
-● Which model feels more fair overall, and why?
-
-
 #### Fairness & Outcomes
 
+● Between the blind and aware models, which applicants benefited or lost out?
+Benefited from blind model:
+  Alice Stark
+  Bob Parker
+  Diana Chen
+  Ishaan Singh
+  Liam Wang
+
+No one lost out from the aware model everyone benefited
+
+
+● Which applicants specifically benefited from the aware model?
+Anyone who got rejected from the blind model was admitted from the aware model.
+
+● Does adding income or first-generation status make the system fairer or less fair? Why?
+  I would argue that its fairer as theses students are at a disadvantage and are far likely to experience external hardships while attending school.  
+
+● Which model feels more fair overall, and why?
+  The aware model because it finds any context as to why that student earned that grade
+
 #### Transparency & Accountability
+● How transparent is your algorithm?
+  Not sure what you mean
+
+● Could you clearly explain a rejection to an applicant?
+  Yes, if they failed the blind model than its safe to say they just weren't academically sufficient with their GPA and/or SAT scores.
+
+
+● Would you feel comfortable if this algorithm evaluated your application? Why or why
+not?
+  Yes my application would pass the aware model, but for the blind model I may fail
 
 #### Broader Implications
+● What risks might arise if such an algorithm were used in real admissions?
+  Implicit bias may arise
 
+● What real-world parallels exist (e.g., hiring, policing, scholarships)?
+  Besides the ones mentioned maybe those that need health insurance.
+
+● What does this exercise reveal about fairness in algorithmic decision systems?
+  The programmers bias are instilled 
+
+● Can algorithms ever be truly fair, or do they just shift where bias appears?
+  The algorithms would never be truly fair as humans are imperfect and influenced by biases. 
+
+● How should fairness and accountability be balanced in automated decisions?
+  Maybe by having a human review or having the final say on automated decisions.
 ---
